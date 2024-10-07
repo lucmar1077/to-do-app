@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    font-family: "articulat-cf", sans-serif;
+    margin: 0;
+    padding: 0;
+    /* outline: 2px solid red; */
+}
+
+:root {
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.taskbar {
+    align-items: center;
+    background-color: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    height: 100vh;
+    /* Edit this padding to control the width of the taskbar */
+    padding: 0 1em;
+}
+
+.taskbar .taskbar-logo {
+    color: #2a2a2a;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-top: 1em;
+}
+
+.taskbar-logo span {
+    color: #677df8;
+    font-style: italic;
+}
+
+.taskbar .taskbar-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+    margin-top: 3em;
+}
+
+.taskbar-tabs div {
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #959595;
+    display: flex;
+    font-size: 1.2rem;
+    gap: 0.5em;
+    padding: 0.1em 0.25em;
+    transition: background-color 0.1s;
+}
+
+.taskbar-tabs > div:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.25s;
+}
+
+/* consider flex grow, set the middle section to grow X times
+faster than the side bars (perhaps flex-grow: 3 or 4 */
